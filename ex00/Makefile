@@ -1,11 +1,11 @@
 NAME	= lesson
 
-SRC		= main.cpp
+SRC		= main.cpp FixedPoint.cpp
 
 OBJS	= $(SRC:.cpp=.o)
 
 CXX			= c++
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
+CXXFLAGS	= -std=c++98
 RM			= rm -f
 
 all: $(NAME)
