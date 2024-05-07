@@ -13,9 +13,9 @@ Fixed::Fixed(const Fixed& other) : value(other.value) {
 }
 
 Fixed&	Fixed::operator=(const Fixed& other) {
-	std::cout << "Copy assignment operator called // <-- This line may be missing depending on your implementation" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other)
-		this->value = other.value;
+		this->value = other.getRawBits();
 	return *this;
 }
 
@@ -25,6 +25,6 @@ int	Fixed::getRawBits() const {
 }
 
 void	Fixed::setRawBits(int const raw) {
-	std::cout << "getRawBits member function called" << std::endl;
+	std::cout << "setRawBits member function called" << std::endl;
 	value = raw;
 }
