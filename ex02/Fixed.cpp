@@ -129,3 +129,17 @@ const Fixed&	Fixed::max(const Fixed& num1, const Fixed& num2) {
 		return num2;
 	return num1;
 }
+
+Fixed&	Fixed::min(Fixed& num1, Fixed& num2) {
+	std::cout << "non-const min function called" << std::endl;
+	if (num1.value > num2.value)
+		return num2;
+	return num1;
+}
+
+Fixed&	Fixed::max(Fixed& num1, Fixed& num2) {
+	std::cout << "non-const max function called" << std::endl;
+	if (num1.value < num2.value)
+		return num2;
+	return num1;
+}
