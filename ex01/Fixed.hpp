@@ -19,7 +19,7 @@ class	Fixed {
 		void	setRawBits(int const raw);
 		float	toFloat() const;
 		int		toInt() const;
-		friend	std::ostream& operator<<(std::ostream& os, const Fixed& num);
 };
 
+std::ostream& operator<<(std::ostream& os, const Fixed& num);
 #endif
